@@ -141,8 +141,7 @@
     border:solid black 1px;
     padding: 10px;
     margin:10px;
-    flex-grow: 1;
-    flex-basis: 20%;
+    flex-basis: 40%;
 }
 
 .session7{

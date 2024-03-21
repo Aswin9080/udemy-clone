@@ -11,6 +11,7 @@
     border-bottom:solid black 1px;
     padding: 20px;
     box-sizing: border-box;
+    position:relative;
 }
 
 .navbar--title{
@@ -49,6 +50,28 @@
     font-size: 15px;
 }
 
+.my--learning{
+    cursor: pointer;
+    width:100%;
+}
+.navbar--profile__popup{
+    width:100px;
+    display:flex;
+    flex-wrap: wrap;
+    background:black;
+    color: black;
+    display:none;
+    position:absolute;
+    padding: 10px;
+    margin:10px;
+    border-radius: 10px;
+}
+.my--learning:hover .navbar--profile__popup{
+    display:block;
+}
+
+/* <!--course--> */
+
 .session2{
     display:flex;
     flex-wrap: wrap;
@@ -66,6 +89,8 @@
     justify-content: center;
     align-items: center;
 }
+
+ /* --sale image--*/
 
 .session3{
     width:100%;
@@ -89,11 +114,27 @@
     left:45%;
     bottom:45%;
     width:200px;
-    background-color: black;
-    color:white;
+    background-color: white;
+    color:black;
     padding:20px;
     border-radius: 5px;
+    animation-name:salespopup;
+    animation-duration: 3s;
+    animation-timing-function:linear;
+    animation-iteration-count: infinite;
 }
+@keyframes salespopup{
+    0%{
+        transform:scale(0);
+    }
+
+    100%{
+        transform:scale(1);
+    }
+}
+
+
+/* --Recommendation */
 
 .session4{
     margin-top: 10px;
@@ -122,6 +163,7 @@
     height:200px;
 }
 
+/* <!--Topic recommended for you--> */
 .session5--title{
     padding:10px;
 }
@@ -130,6 +172,7 @@
     display:flex;
     gap:10px;
     flex-wrap: wrap;
+   
 
 }.session5--recommended__couse p{
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -139,7 +182,14 @@
     margin:10px;
     flex-grow: 1;
     flex-basis: 30%;
+    background-color:aliceblue;
 }
+
+.session5--recommended__couse .one:hover{
+background-color: aqua;
+}
+
+/* <!--Most popular--> */
 
 .session7{
     margin-top: 10px;
@@ -170,6 +220,7 @@
     height:200px;
 }
 
+/* <!--fotter--> */
 .session8{
     background-color: black;
     color:white;
