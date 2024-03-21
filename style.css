@@ -50,6 +50,9 @@
     font-size: 15px;
 }
 
+.navbar--menu{
+    display:none;
+}
 .my--learning{
     cursor: pointer;
     width:100%;

@@ -135,7 +135,17 @@
     gap:10px;
     flex-wrap: wrap;
 
-}.session5--recommended__couse p{
+}    
+.navbar--profile{
+    display:none;
+}
+
+.navbar--menu{
+    margin:10px;
+    display:block;
+}
+
+{
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-weight: bold;
     border:solid black 1px;
